@@ -1,0 +1,46 @@
+█▓▒▒░░░ TestBox v6.0.0-snapshot ░░░▒▒▓█
+_____________________________________________________________
+ 
+√tests.specs.BDDTest (432 ms)
+[Passed: 4] [Failed: 0] [Errors: 0] [Skipped: 2] [Suites/Specs: 1/6]
+ 
+( √ ) A spec 
+    ( √ ) can test for equality (213 ms) 
+    ( √ ) can have more than one expectation to test (56 ms) 
+    ( √ ) can have negative expectations (71 ms) 
+    ( - ) can have tests that can be skipped easily like this one by prefixing it with x (2 ms) 
+    ( - ) can have tests that execute if the right environment exists (Windows Only) (2 ms) 
+    ( √ ) can have tests that execute if the right environment exists (Mac Only) (21 ms) 
+_____________________________________________________________
+ 
+√tests.specs.BDDTest (119 ms)
+[Passed: 4] [Failed: 0] [Errors: 0] [Skipped: 2] [Suites/Specs: 1/6]
+ 
+( √ ) A spec 
+    ( √ ) can test for equality (14 ms) 
+    ( √ ) can have more than one expectation to test (23 ms) 
+    ( √ ) can have negative expectations (31 ms) 
+    ( - ) can have tests that can be skipped easily like this one by prefixing it with x (1 ms) 
+    ( - ) can have tests that execute if the right environment exists (Windows Only) (1 ms) 
+    ( √ ) can have tests that execute if the right environment exists (Mac Only) (9 ms) 
+_____________________________________________________________
+ 
+√tests.specs.MyFirstSpec (24 ms)
+[Passed: 1] [Failed: 0] [Errors: 0] [Skipped: 0] [Suites/Specs: 1/1]
+ 
+( √ ) My First Test 
+    ( √ ) it can add (14 ms) 
+ 
+ 
+=================================================================================
+Final Stats
+=================================================================================
+ 
+[Passed: 9] [Failed: 0] [Errors: 0] [Skipped: 4] [Bundles/Suites/Specs: 3/3/13]
+ 
+TestBox:        v6.0.0-snapshot
+Duration:       1042 ms
+CFML Engine:    BoxLang 1.0.0-snapshot+2143
+Labels:         None
+ 
+√ Passed    - Skipped    !! Exception/Error    X Failure

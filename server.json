@@ -1,0 +1,16 @@
+{
+    "web":{
+        "rewrites":{
+            "enable":"true"
+        }
+    },
+    "scripts":{
+        "onServerInitialInstall":"install bx-compat"
+    },
+    "app":{
+        "cfengine":"boxlang@1.0.0-beta14"
+    },
+    "JVM":{
+        "javaVersion":"openjdk21_jdk"
+    }
+}
