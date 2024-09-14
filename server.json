@@ -1,0 +1,8 @@
+{
+    "name":"wizard",
+    "web":{
+        "rewrites":{
+            "enable":"true"
+        }
+    }
+}
