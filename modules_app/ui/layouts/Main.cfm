@@ -37,8 +37,8 @@
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 			<div class="container-fluid">
 				<!---Brand --->
-				<a class="navbar-brand" href="#event.buildLink( 'main' )#">
-					<strong>Welcome</strong>
+				<a class="navbar-brand" href="#event.buildLink( '' )#">
+					<strong>Welcome to UI module</strong>
 				</a>
 
 				<!--- Mobile Toggler --->

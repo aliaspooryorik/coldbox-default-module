@@ -1,33 +1,6 @@
 component extends="coldbox.system.EventHandler" {
 
 	/**
-	 * Default Action
-	 */
-	function index( event, rc, prc ){
-		prc.welcomeMessage = "Welcome to ColdBox!";
-		event.setView( "main/index" );
-	}
-
-	/**
-	 * Produce some restfulf data
-	 */
-	function data( event, rc, prc ){
-		return [
-			{ "id" : createUUID(), "name" : "Luis" },
-			{ "id" : createUUID(), "name" : "Joe" },
-			{ "id" : createUUID(), "name" : "Bob" },
-			{ "id" : createUUID(), "name" : "Darth" }
-		];
-	}
-
-	/**
-	 * Relocation example
-	 */
-	function doSomething( event, rc, prc ){
-		relocate( "main.index" );
-	}
-
-	/**
 	 * --------------------------------------------------------------------------
 	 * Implicit Actions
 	 * --------------------------------------------------------------------------
@@ -39,6 +12,9 @@ component extends="coldbox.system.EventHandler" {
 	}
 
 	function onRequestStart( event, rc, prc ){
+		if ( event.getCurrentModule() == "" ) {
+			event.overrideEvent( "ui:#event.getCurrentEvent()#" );
+		}
 	}
 
 	function onRequestEnd( event, rc, prc ){
@@ -50,6 +26,11 @@ component extends="coldbox.system.EventHandler" {
 	function onSessionEnd( event, rc, prc ){
 		var sessionScope     = event.getValue( "sessionReference" );
 		var applicationScope = event.getValue( "applicationReference" );
+	}
+
+	function invalidEvent( event, rc, prc ){
+		event.noLayout();
+		event.setView( "main/invalidEvent" );
 	}
 
 	function onException( event, rc, prc ){

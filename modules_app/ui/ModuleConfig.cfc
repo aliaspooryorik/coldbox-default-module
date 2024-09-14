@@ -47,9 +47,9 @@ component {
 	this.description        = "";
 	this.version            = "1.0.0";
 	// If true, looks for views in the parent first, if not found, then in the module. Else vice-versa
-	this.viewParentLookup   = true;
+	this.viewParentLookup   = false;
 	// If true, looks for layouts in the parent first, if not found, then in module. Else vice-versa
-	this.layoutParentLookup = true;
+	this.layoutParentLookup = false;
 	// Module Entry Point
 	this.entryPoint         = "ui";
 	// Inherit Entry Point

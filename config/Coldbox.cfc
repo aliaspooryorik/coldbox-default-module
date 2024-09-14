@@ -23,7 +23,7 @@ component {
 			reinitKey                : "fwreinit",
 			handlersIndexAutoReload  : true,
 			// Implicit Events
-			defaultEvent             : "",
+			defaultEvent             : "ui:Home.index",
 			requestStartHandler      : "Main.onRequestStart",
 			requestEndHandler        : "",
 			applicationStartHandler  : "Main.onAppInit",
@@ -42,8 +42,8 @@ component {
 			controllerDecorator      : "",
 			// Error/Exception Handling
 			invalidHTTPMethodHandler : "",
-			exceptionHandler         : "main.onException",
-			invalidEventHandler      : "",
+			exceptionHandler         : "Main.onException",
+			invalidEventHandler      : "Main.invalidEvent",
 			customErrorTemplate      : "",
 			// Application Aspects
 			handlerCaching           : false,
